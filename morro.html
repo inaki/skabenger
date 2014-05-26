@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>skabenger</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-image: url(img/vintage_paper.jpg);
+      }
+      img {width: 100%;}
+
+      ul {list-style: none;}
+
+      table tr td {padding: 10px;}
+
+      #palabras {font-size: 2em; color: #666666;}
+
+      .hero-unit {padding: 20px;}
+
+      #elboton {font-size: 1.5em; padding: 10px 20px;}
+
+
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">skabenger</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+   <div class="container">
+      <img src="img/elMorro.jpg" class="img-polaroid">
+      <form class="form-signin ">
+        <p class="hero-unit">You haven't found something that can help you out with the investigation. The Cuartel de Ballajá housed Spanish soldiers and their families, go there. Maybe you can find some clues about thieves inside the colony.</p>
+        <h1 id="palabras" class="form-signin-heading hero-unit">Which is the name of the author of the painting hanged inside the room of the fifth floor of "Castillo del Morro".</h1>
+        <input type="text" class="input-block-level" id="clue1" placeholder="write the whole name">
+        <input class="btn btn-large btn-primary" type="button" name="btnButton"  value="Submit" onclick="checkValue()">
+
+                <!-- Button to trigger modal -->
+        <a href="#myModal" id="elboton" role="button" class="btn" data-toggle="modal">hint!</a>
+         
+        <!-- Modal -->
+        <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">Hint</h3>
+          </div>
+          <div class="modal-body">
+            <p>I am sure you are "intelligent" enough to do it by yourself, but take this hint!</p>
+            <p>the hint is</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            
+          </div>
+        </div>
+
+          <script type="text/JavaScript">
+              function checkValue() {
+              var secretcode = document.getElementById("clue1").value;
+                if (secretcode.toLowerCase() == "alejo fernandez"){
+                    window.location.href = 'fortaleza.html';
+                }
+              }
+          </script><br><br>
+          <img src="img/4.png" class="img-polaroid">
+
+      </form>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
